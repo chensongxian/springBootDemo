@@ -28,5 +28,11 @@ public class PropertisTest {
         Assert.assertEquals(propertiesComponent.getName(),"csx");
         Assert.assertEquals(propertiesComponent.getPassword(),"1234");
         System.out.println(propertiesComponent.getDesc());
+        System.out.println("random value:"+propertiesComponent.getValue());
+        System.out.println("BigNumber:"+propertiesComponent.getBignumber());
+        System.out.println("test1:"+propertiesComponent.getTest1());
+        System.out.println("test2:"+propertiesComponent.getTest2());
+        //是哪个环境的配置文件
+        System.out.println("profile:"+propertiesComponent.getProfile());
     }
 }
