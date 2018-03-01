@@ -1,4 +1,4 @@
-package com.csx.springBootDemo.entity;
+package com.csx.springBootDemo.domain.p;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,22 +8,23 @@ import javax.persistence.Id;
 /**
  * Created with IntelliJ IDEA.
  *
- * @Description: TODO
+ * @Description: 主数据源实体
  * @Author: csx
- * @Date: 2018/02/27
+ * @Date: 2018/02/28
  */
 @Entity
 public class User {
     @Id
     @GeneratedValue
     private Long id;
+
     @Column(nullable = false)
     private String name;
+
     @Column(nullable = false)
     private Integer age;
 
-    public User() {
-    }
+    public User(){}
 
     public User(String name, Integer age) {
         this.name = name;

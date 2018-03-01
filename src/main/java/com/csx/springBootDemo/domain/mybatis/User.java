@@ -1,34 +1,16 @@
-package com.csx.springBootDemo.entity;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+package com.csx.springBootDemo.domain.mybatis;
 
 /**
  * Created with IntelliJ IDEA.
  *
  * @Description: TODO
  * @Author: csx
- * @Date: 2018/02/27
+ * @Date: 2018/03/01
  */
-@Entity
 public class User {
-    @Id
-    @GeneratedValue
     private Long id;
-    @Column(nullable = false)
     private String name;
-    @Column(nullable = false)
     private Integer age;
-
-    public User() {
-    }
-
-    public User(String name, Integer age) {
-        this.name = name;
-        this.age = age;
-    }
 
     public Long getId() {
         return id;
