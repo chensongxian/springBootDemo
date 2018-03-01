@@ -31,7 +31,7 @@ public class HelloTest {
 
     @Test
     public void testHello() throws Exception {
-        BDDMockito.given(this.helloController.index())
+        BDDMockito.given(this.helloController.hello())
                     .willReturn("Hello World");
         this.mvc.perform(MockMvcRequestBuilders.get("/hello"))
                 .andDo(MockMvcResultHandlers.print())
